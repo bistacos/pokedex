@@ -620,3 +620,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* Custom Styles */
+.logo img {
+  max-width: 60px;
+  margin-bottom: 0 !important;
+}
