@@ -2,8 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import NavBar from "../components/navbar"
 
-
 const IndexPage = () => (
+
   <div>
     <Layout>
       <NavBar />
@@ -13,14 +13,13 @@ const IndexPage = () => (
         <p>
           ...ever since you've heard that there was a
           {` `}
-          <a href="https://www.gatsbyjs.org">PokéAPI</a>
+          <a href="https://pokeapi.co/">PokéAPI</a>
         </p>
       </div>
       <div>
         {/* <img src="https://nerdist.com/wp-content/uploads/2019/05/Bulba-1200x676.png" alt="" /> */}
       </div>
     </Layout>
-
   </div>
 )
 
