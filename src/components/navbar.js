@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  Collapse,
   Navbar,
   NavbarBrand,
   Nav,
@@ -11,18 +10,16 @@ import {
 import { Location } from '@reach/router'
 
 const NavBar = (props, location) => {
-  console.log('this one locatin: ', location);
   return (
     <div>
       <Location>
         {({ location }) => {
-          console.log('location now: ', location.pathname);
           return (
             <Navbar color="dark" light expand="md">
               <div className={`logo align-middle pr-2 ${location.pathname === '/' ? 'underline text-white font-weight-bold' : ''}`}>
-                <img src="https://i.pinimg.com/originals/1e/d8/50/1ed85028b1c54bdfbf7e0c7158aa6452.jpg" alt="" />
+                <img src="https://i2.wp.com/metro.co.uk/wp-content/uploads/2019/05/rick-and-morty-main-new-2-9192.jpg?quality=90&strip=all&zoom=1&resize=644%2C453&ssl=1" alt="" />
               </div>
-              <NavbarBrand href="/">Pokédex Searcher</NavbarBrand>
+              <NavbarBrand href="/">Rick and Morty Character Searcher</NavbarBrand>
                 <Nav className="mr-auto" navbar>
                   <NavItem className={`mr-auto ${location.pathname === '/search/' ? 'underline text-white font-weight-bold' : ''}`}>
                     <NavLink href="/search/">Search</NavLink>
